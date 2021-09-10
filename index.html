@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>Web Cam</title>
+  
+  
+  
+     <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"> </script>
+
+  
+   <link rel="stylesheet" href="style.css">
+   <style type="text/css" media="">
+    *{
+    margin: 0;
+    padding: 0;
+    }
+    video{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    }
+   </style>
+ </head>
+
+ <body>
+ <video id="webcam" autoplay playsinline> </video>
+ <canvas id="canvas" class="d-none"> </canvas>
+   <script src="main.js"> </script>
+   <script type="text/javascript" charset="utf-8">
+    alert("This website doesn't store any data");
+const webcamElement = document.getElementById('webcam');
+const canvasElement = document.getElementById('canvas');
+const webcam = new Webcam(webcamElement, 'user', canvasElement);
+webcam.start()
+
+
+
+
+   </script>
+ </body>
